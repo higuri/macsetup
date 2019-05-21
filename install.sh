@@ -7,17 +7,24 @@ cd ~
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 
-# *) vim: +clipboard
-brew install zsh tmux git vim
+# zsh
+brew install zsh 
+sudo chsh -s $(which zsh) $USER
+# git, tmux, vim(+clipboard), iterm2
+brew install git tmux vim
 brew cask install iterm2
+
+# font: mplus
+brew tap caskroom/homebrew-fonts
+brew cask install font-m-plus
+
 # dotfiles
 git clone https://github.com/higuri/dotfiles
 pushd dotfiles
   . install.sh
 popd
 
-# * Font: Migu 2M
-#   https://osdn.net/projects/mix-mplus-ipa/downloads/63545/migu-2m-20150712.zip/
-# * iTerm2 config
-#   iTerm2 > Preferences > General > Preferences > Load preferences from ...
-#   ~/macsetup/com.googlecode.iterm2.plist
+# XXX: iTerm2 Preferences
+# - Profiles > Colors > Color Presets: Solarized Dark
+# - Profiles > Text > Font: M+ 1mn medium 16pt
+# - Profiles > Window > Columns x Rows: 160 x 40
