@@ -10,13 +10,16 @@ brew doctor
 # zsh
 brew install zsh 
 sudo chsh -s $(which zsh) $USER
-# git, tmux, vim(+clipboard), iterm2
+# tmux, vim(+clipboard), iterm2
 brew install git tmux vim
 brew cask install iterm2
-
 # font: mplus
 brew tap caskroom/homebrew-fonts
 brew cask install font-m-plus
+# git
+brew install git
+# git config --global user.name "Yusuke Higuchi"
+# git config --global user.email "higuri36@gmail.com"
 
 # dotfiles
 git clone https://github.com/higuri/dotfiles
