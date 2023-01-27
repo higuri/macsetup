@@ -8,7 +8,7 @@ cd ~
 brew doctor
 
 # zsh
-brew install zsh
+#brew install zsh
 # zplug
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
