@@ -8,10 +8,6 @@ cd ~
 brew doctor
 
 # zsh
-brew install zsh
-# zplug
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-
 sudo chsh -s $(which zsh) $USER
 # tmux, vim(+clipboard), iterm2, git
 brew install git tmux vim git
