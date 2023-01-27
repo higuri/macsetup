@@ -7,6 +7,12 @@ cd ~
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor
 
+# zsh
+brew install zsh
+# zplug
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+
+sudo chsh -s $(which zsh) $USER
 # tmux, vim(+clipboard), iterm2, git
 brew install git tmux vim git
 brew install --cask iterm2
